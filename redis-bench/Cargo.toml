@@ -1,0 +1,12 @@
+[package]
+name = "redis-bench"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bench"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+mio = { version = "1", features = ["net", "os-poll"] }
